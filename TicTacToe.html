@@ -14,13 +14,10 @@
 
     <script>
         var turn = false; // is it the player's turn?
-        while (true) {
-            var nn = prompt("Please enter the board's length (valid: 3 <= n <= 10)");
-            if (nn >= 3 && nn <= 10) {
-                break;
-            }
+        var n = 0;
+        while (n < 3 && n > 0) {
+            n = prompt("Please enter the board's length (valid: 3 <= n <= 10)");
         }
-        const n = nn;
         const size = 100;
         var tbl = document.getElementById("tbl");
 
